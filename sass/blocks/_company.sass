@@ -1,0 +1,53 @@
+.company
+  padding-top: 65px
+  padding-bottom: 100px
+  &-container
+    display: flex
+    flex-direction: column
+    align-items: center
+  &-title
+    font-family: $caveat
+    font-weight: 400
+    font-size: 29px
+    color: #bf5025
+    margin-bottom: 15px
+  &-subtitle
+    font-family: $montserat
+    font-size: 30px
+    color: $text-color
+    text-transform: uppercase
+    font-weight: 400
+    margin-bottom: 60px
+  &-wrapper
+    width: 100%
+    height: 480px
+    overflow: hidden
+    position: relative
+    &__img
+      transform: translate(-5%, -7%)
+  &-card
+    padding: 55px 65px
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 65%
+    background-color: rgba(139, 180, 205, .7)
+    &__title
+      font-family: $montserat
+      font-size: 30px
+      margin-bottom: 30px
+      color: #fff
+    &__text
+      font-family: $montserat
+      font-size: 14px
+      color: #fff
+      margin-bottom: 30px
+    &__button
+      width: fit-content
+      font-family: $montserat
+      font-size: 14px
+      text-transform: uppercase
+      color: $hover-text-color
+      transition: background-color .3s

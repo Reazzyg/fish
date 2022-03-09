@@ -1,0 +1,67 @@
+.contacts
+.map
+  max-width: 100vw
+  position: relative
+  &-info
+    padding: 57px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 15%
+    left: 60%
+    background-color: $hover-text-color-opacity
+    &__title
+      color: #fff
+      font-family: $montserat
+      font-size: 30px
+      font-weight: 400
+      text-align: center
+    &__text
+      font-family: $montserat
+      font-size: 14px
+      color: #fff
+      font-weight: 400
+      text-align: center
+  &-button
+    border: 1px solid transparent
+.form
+  padding-top: 50px
+  padding-bottom: 50px
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 10px
+  max-width: 520px
+  margin: auto
+  font-family: $montserat
+  &-title
+    font-family: $caveat
+    color: $red
+    font-size: 30px
+    font-weight: 400
+    text-align: center
+  &-subtitle
+    font-family: $montserat
+    font-size: 30px
+    text-transform: uppercase
+    color: $text-color
+    font-weight: 400
+    text-align: center
+  &-group
+    display: flex
+    gap: 4px
+    justify-content: space-between
+    width: 100%
+  &-input
+    font-size: 14px
+    padding: 10px 30px
+    outline: none
+    resize: none
+    border: 2px solid #e4e7e8
+    flex-basis: 50%
+  &-textarea
+    width: 100%

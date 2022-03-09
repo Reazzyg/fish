@@ -1,0 +1,68 @@
+.advantages
+  padding-top: 50px
+  padding-bottom: 60px
+  &-container
+    display: flex
+    flex-direction: column
+    align-items: center
+  &-wrapper
+    display: flex
+    flex-direction: row
+    gap: 30px
+    margin-top: 60px
+  &-title
+    font-family: $caveat
+    color: $red
+    font-size: 30px
+    font-weight: 400
+  &-subtitle
+    font-family: $montserat
+    font-size: 30px
+    text-transform: uppercase
+    color: $text-color
+    font-weight: 400
+  &-card
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 25px
+    justify-content: flex-start
+    &__imageBlock
+      position: relative
+      overflow: hidden
+      width: 270px
+      height: 180px
+      object-fit: cover
+    &__img
+      height: 100%
+    &__title
+      margin-top: 0.95em
+      font-family: $montserat
+      font-size: 24px
+      color: $dark-grey
+      text-transform: capitalize
+      font-weight: 400
+      transition: color .3s
+    &__text
+      margin-top: 1.35em
+      font-family: $montserat
+      font-size: 14px
+      color: $grey
+      text-align: center
+    &__overlay
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      bottom: 0
+      background-color: $hover-text-color
+      opacity: 0
+      transition: opacity .3s
+      &-dark
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        background-color: #31373a
+        opacity: .4

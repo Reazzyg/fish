@@ -1,0 +1,43 @@
+.offer
+  position: relative
+  &-wrapper
+    padding-top: 150px
+    padding-bottom: 150px
+    width: 100%
+    background-image: url('../img/parallax.jpg')
+    background-attachment: fixed
+    background-position: center
+    background-size: cover
+  &-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+  &-overlay
+    position: absolute
+    right: 0
+    left: 0
+    top: 0
+    bottom: 0
+    background-color: $text-color
+    opacity: .3
+  &-title
+    font-family: $montserat
+    font-size: 50px
+    font-weight: 400
+    text-transform: uppercase
+    color: #fff
+    text-align: center
+    z-index: 99
+  &-text
+    font-family: $montserat
+    font-size: 18px
+    color: #fff
+    margin-top: 25px
+    text-align: center
+    font-weight: 500
+    z-index: 99
+    text-transform: uppercase
+  &-button
+    margin-top: 25px
+    z-index: 99

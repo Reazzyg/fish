@@ -1,0 +1,41 @@
+.hero
+  background-image: url('../img/7.jpg')
+  background-position: center
+  background-size: cover
+  position: relative
+  &-container
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+  &-overlay
+    position: absolute
+    right: 0
+    left: 0
+    top: 0
+    bottom: 0
+    background-color: #fff
+    opacity: .3
+  &-title
+    font-family: $caveat
+    font-size: 42px
+    line-height: 30px
+    margin-bottom: 20px
+    font-weight: 800
+    text-transform: uppercase
+    z-index: 99
+    text-align: center
+  &-info
+    font-family: $caveat
+    font-size: 24px
+    line-height: 30px
+    font-weight: 800
+    text-transform: uppercase
+    text-align: center
+    z-index: 99

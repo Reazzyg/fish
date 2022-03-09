@@ -1,0 +1,45 @@
+.footer
+  background-color: $dark-grey
+  padding-top: 50px
+  padding-bottom: 50px
+  &-container
+    display: flex
+    justify-content: space-between
+  &-area
+  &-list
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    max-height: 110px
+    gap: 30%
+    &__title
+      margin-bottom: 0.95em
+      font-family: $montserat
+      font-size: 14px
+      color: #fff
+      font-weight: 400
+      text-transform: uppercase
+    &__item
+      margin-bottom: 1.35em
+      max-width: 250px
+      font-family: $montserat
+      font-size: 12px
+      color: $grey
+    &__link
+      color: $hover-text-color
+.to_top
+  position: fixed
+  bottom: 80px
+  right: 40px
+  z-index: 9999
+  width: 30px
+  height: 30px
+  text-align: center
+  line-height: 30px
+  background: #fff
+  color: #444
+  cursor: pointer
+  border-radius: 2px
+  display: none
+  &-show
+    display: block

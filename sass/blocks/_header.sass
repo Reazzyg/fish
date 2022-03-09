@@ -1,0 +1,133 @@
+.header
+  padding-top: 20px
+  padding-bottom: 20px
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  background-color: rgba(255, 255, 255, .8)
+  z-index: 999
+
+  &-container
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+  &-logo
+    width: 120px
+    position: absolute
+    left: 0
+    top: 0
+    transform: translateY(-35%)
+  &-icon
+    height: 10px
+  &-tel
+    position: absolute
+    right: 0
+    top: 0
+    text-decoration: none
+    font-family: $montserat
+    font-weight: 500
+    color: $text-color
+    font-size: 16px
+  &-list
+    display: flex
+    gap: 20px
+  &-link
+    color: $text-color
+    font-family: $montserat
+    font-weight: 500
+    font-size: 14px
+    text-transform: uppercase
+    position: relative
+    &-active
+      &::after
+        content: ''
+        position: absolute
+        bottom: -0.7rem
+        left: 0
+        width: 75%
+        height: 3px
+        background-color: #7b6f71
+  &-wrapper
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+  &-menu
+    &-mobile
+      padding-top: 35px
+      background-color: rgba(139, 180, 205, .93)
+      position: fixed
+      left: 0
+      top: 0
+      bottom: 0
+      right: 65%
+      display: none
+      &-active
+    &__close
+      position: absolute
+      width: 15px
+      height: 15px
+      background-color: rgba(139, 180, 205, 0 )
+      border: none
+      outline: none
+      cursor: pointer
+      right: 20px
+      top: 20px
+      &::before
+        content: ''
+        position: absolute
+        height: 2px
+        width: 15px
+        background-color: darken($hover-text-color,30%)
+        transform: rotate(45deg)
+      &::after
+        content: ''
+        position: absolute
+        height: 2px
+        width: 15px
+        background-color: darken($hover-text-color,30%)
+        transform: rotate(-45deg)
+
+    &__burger
+      padding: 0
+      position: relative
+      width: 20px
+      height: 18px
+      background-color: rgba(255, 255, 255, 0)
+      border: none
+      outline: none
+      cursor: pointer
+      display: none
+
+    &__line
+      position: absolute
+      height: 2px
+      width: 20px
+      background-color: darken($hover-text-color ,50% )
+      transform: translateX(-50%)
+
+      &:nth-child(1)
+        top: 0
+      &:nth-child(2)
+        bottom: 0
+      &:nth-child(3)
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+
+  &-list
+    &-mobile
+      flex-direction: column
+      gap: 0
+  &-item
+    &-mobile
+      padding: 17px 52px 17px 35px
+      border-bottom: 1px solid darken($hover-text-color, 20% )
+  &-link
+    &-mobile
+      color: #fff
+      font-size: 13px
+      font-weight: 400
+      transition: background-color .3s
